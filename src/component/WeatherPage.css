@@ -1,0 +1,44 @@
+.weather-page { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    height: 900px;
+
+}
+
+.weather-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: left;
+    width: 80%;
+}
+
+.weather-header {
+    width: 100%;
+    padding-bottom: 10%;
+}
+
+.weather-name {
+    font-size: 44px;
+    width: 100%;
+    display: flex;
+}
+
+
+.weather-forecast-text {
+    color: #4E4B66;
+    font-size: 34px;
+    width: 100%;
+    display: flex;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+

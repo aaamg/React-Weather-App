@@ -1,0 +1,51 @@
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: right
+
+}
+
+.header-box {
+    margin-top: 50px;
+    margin-bottom: 30px;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 236px;
+
+
+}
+
+.input-continue {
+    background-color: #5F2EEA;
+    border-color: none;
+    border-style: none;
+    border-radius: 5px;
+}
+
+input {
+    height: 64px;
+    margin-top: 25px;
+    background-color: #EFF0F6;
+    border-color: none;
+    border-style: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.form-box {
+    display: flex;
+    justify-content: center;
+}
+
+/* Testing Box: */
+
+.testing-box {
+    border: 1px solid black;
+    width: 500px;
+    margin-left: 30%;
+}
