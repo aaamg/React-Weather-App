@@ -32,6 +32,7 @@ const testData = [
     },
 
 ]
+var degree = '&#176;';
 
 
 const WeatherPage = (props) => {
@@ -89,6 +90,9 @@ const WeatherPage = (props) => {
             console.log("Error: ", err);
           });
       }, []);
+      // Convert number to 2 decimals
+        // var temp1Str = weather.temp1;
+        //     temp1Str.toFixed(0); 
 
     return(
         <div className="weather-page">
@@ -106,9 +110,11 @@ const WeatherPage = (props) => {
                             date={banana.date}
                         />
                         )})}
-                    </p> */}
+                    </p> */} 
+                    {/* RE Above: I wanted to find a way to map through my API values, but was having trouble so I just hard coded the cards/state but with more time this could be refactored! */}
                 <div className="boxes">
                     <Card 
+                            // temp={`${weather.temp1} ` + '&#176;'}
                             temp={weather.temp1}
                             day={weather.day1}
                             date={weather.date1}
@@ -128,7 +134,7 @@ const WeatherPage = (props) => {
                             day={weather.day4}
                             date={weather.date4}
                         />
-                    <Card 
+                    <Card   
                             temp={weather.temp5}
                             day={weather.day5}
                             date={weather.date5}
