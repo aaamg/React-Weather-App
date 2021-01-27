@@ -115,27 +115,27 @@ const WeatherPage = (props) => {
                 <div className="boxes">
                     <Card 
                             // temp={`${weather.temp1} ` + '&#176;'}
-                            temp={weather.temp1}
+                            temp={Math.round(weather.temp1)}
                             day={weather.day1}
                             date={weather.date1}
                         />
                     <Card 
-                            temp={weather.temp2}
+                            temp={Math.round(weather.temp2)}
                             day={weather.day2}
                             date={weather.date2}
                         />
                     <Card 
-                            temp={weather.temp3}
+                            temp={Math.round(weather.temp3)}
                             day={weather.day3}
                             date={weather.date3}
                         />
                     <Card 
-                            temp={weather.temp4}
+                            temp={Math.round(weather.temp4)}
                             day={weather.day4}
                             date={weather.date4}
                         />
                     <Card   
-                            temp={weather.temp5}
+                            temp={Math.round(weather.temp5)}
                             day={weather.day5}
                             date={weather.date5}
                         />

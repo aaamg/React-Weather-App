@@ -8,6 +8,7 @@
 .header-box {
     margin-top: 50px;
     margin-bottom: 30px;
+    margin-bottom: 0px;
 
 }
 
@@ -26,6 +27,8 @@
     border-color: none;
     border-style: none;
     border-radius: 5px;
+    width: 236px;
+    color: white;
 }
 
 input {
@@ -35,7 +38,7 @@ input {
     border-color: none;
     border-style: none;
     border-radius: 5px;
-    color: white;
+    color: black;
 }
 
 .form-box {
@@ -49,4 +52,15 @@ input {
     border: 1px solid black;
     width: 500px;
     margin-left: 30%;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-size: 30px;
+    color: #4E4B66;
+    margin-bottom: 0px;
 }
