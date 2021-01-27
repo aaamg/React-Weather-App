@@ -40,3 +40,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.card-5 {
+    color: red;
+}

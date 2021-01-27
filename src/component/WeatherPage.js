@@ -4,6 +4,7 @@ import axios from 'axios'
 import './WeatherPage.css'
 import Card from './Card'
 
+// Test data set is for testing purposes only
 const testData = [
     {
         day: "Monday",
@@ -32,7 +33,38 @@ const testData = [
     },
 
 ]
-var degree = '&#176;';
+// End test data
+
+// Day of Week
+
+var d = new Date();
+var n = d.getDay()
+
+
+switch (n) {
+case 0:
+  n = "Sunday";
+  break;
+case 1:
+  n = "Monday";
+  break;
+case 2:
+  n = "Tuesday";
+  break;
+case 3:
+  n = "Wednesday";
+  break;
+case 4:
+  n = "Thursday";
+  break;
+case 5:
+  n = "Friday";
+  break;
+case 6:
+  n = "Saturday";
+}
+
+// End Day of week
 
 
 const WeatherPage = (props) => {
@@ -41,7 +73,7 @@ const WeatherPage = (props) => {
     var url = `https://api.openweathermap.org/data/2.5/forecast?units=imperial&q=${location}&appid=85f48bfed6f16f0b4ac5840f56199b17`;
 
     const [weather, setWeather] = useState({
-        temp1: "", //We will use 6,12,18,24,32
+        temp1: "", //We will use 6, 12, 18, 24, 32 as our random points for the weather of the day(s)
         temp2: "",
         temp3: "",
         temp4: "",
@@ -90,9 +122,22 @@ const WeatherPage = (props) => {
             console.log("Error: ", err);
           });
       }, []);
-      // Convert number to 2 decimals
-        // var temp1Str = weather.temp1;
-        //     temp1Str.toFixed(0); 
+
+      // Convert weird date/tiem format into more readable format
+        function dateFixer(data){
+            var date2 = data.toString();
+            var date3 = date2.slice(0,10)
+            return date3
+
+        }
+
+        var day1 = dateFixer(weather.date1);
+        var day2 = dateFixer(weather.date2);
+        var day3 = dateFixer(weather.date3);
+        var day4 = dateFixer(weather.date4);
+        var day5 = dateFixer(weather.date5);
+      // End Convert
+
 
     return(
         <div className="weather-page">
@@ -115,29 +160,29 @@ const WeatherPage = (props) => {
                 <div className="boxes">
                     <Card 
                             // temp={`${weather.temp1} ` + '&#176;'}
-                            temp={Math.round(weather.temp1)}
-                            day={weather.day1}
-                            date={weather.date1}
+                            temp={Math.round(weather.temp1) + '​°'}
+                            day={n.slice(0,3)}
+                            date={day1}
                         />
                     <Card 
-                            temp={Math.round(weather.temp2)}
-                            day={weather.day2}
-                            date={weather.date2}
+                            temp={Math.round(weather.temp2) + '​°'}
+                            day={weather.day2.slice(0,3)}
+                            date={day2}
                         />
                     <Card 
-                            temp={Math.round(weather.temp3)}
-                            day={weather.day3}
-                            date={weather.date3}
+                            temp={Math.round(weather.temp3) + '​°'}
+                            day={weather.day3.slice(0,3)}
+                            date={day3}
                         />
                     <Card 
-                            temp={Math.round(weather.temp4)}
-                            day={weather.day4}
-                            date={weather.date4}
+                            temp={Math.round(weather.temp4) + '​°'}
+                            day={weather.day4.slice(0,3)}
+                            date={day4}
                         />
-                    <Card   
-                            temp={Math.round(weather.temp5)}
-                            day={weather.day5}
-                            date={weather.date5}
+                    <Card   className={"card-5"}
+                            temp={Math.round(weather.temp5) + '​°'}
+                            day={weather.day5.slice(0,3)}
+                            date={day5}
                         />
                 </div>
                 </div>
