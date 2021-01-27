@@ -163,26 +163,31 @@ const WeatherPage = (props) => {
                             temp={Math.round(weather.temp1) + '​°'}
                             day={n.slice(0,3)}
                             date={day1}
+                            className={"card-1"}
                         />
                     <Card 
                             temp={Math.round(weather.temp2) + '​°'}
                             day={weather.day3.slice(0,3)}
                             date={day2}
+                            className={"card-2"}
                         />
                     <Card 
                             temp={Math.round(weather.temp3) + '​°'}
                             day={weather.day3.slice(0,3)}
                             date={day3}
+                            className={"card-3"}
                         />
                     <Card 
                             temp={Math.round(weather.temp4) + '​°'}
                             day={weather.day4.slice(0,3)}
                             date={day4}
+                            className={"card-4"}
                         />
-                    <Card   className={"card-5"}
+                    <Card   
                             temp={Math.round(weather.temp5) + '​°'}
                             day={weather.day5.slice(0,3)}
                             date={day5}
+                            className={"card-5"}
                         />
                 </div>
                 </div>
