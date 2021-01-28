@@ -20,8 +20,8 @@
     padding-bottom: 10%;
 }
 
-.weather-name {
-    font-size: 44px;
+.weather-name { 
+    font-size: 55px;
     width: 100%;
     display: flex;
 }
@@ -48,7 +48,7 @@
         border-top-right-radius: 15px;
         margin-top: 0px;
         margin-bottom: 0px;
-        background-image: linear-gradient(#00e0cd , #8d00eb );
+        background-image: linear-gradient(#EB0055 , #F98820 );
         height: 70%;
     
         display: flex;
@@ -65,7 +65,7 @@
     border-top-right-radius: 15px;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-image: linear-gradient(#00ff88 , #eb003b );
+    background-image: linear-gradient(#EF33FF , #9E0D9B );
     height: 70%;
 
     display: flex;
@@ -80,7 +80,7 @@
     border-top-right-radius: 15px;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-image: linear-gradient(#a4e000 , #8d00eb );
+    background-image: linear-gradient(#624AF2 , #50DDC3 );
     height: 70%;
 
     display: flex;
@@ -96,7 +96,7 @@
     border-top-right-radius: 15px;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-image: linear-gradient(#00e0cd , #eb0000 );
+    background-image: linear-gradient(#5F2EEA , #C8B5FF );
     height: 70%;
 
     display: flex;
@@ -112,7 +112,7 @@
     border-top-right-radius: 15px;
     margin-top: 0px;
     margin-bottom: 0px;
-    background-image: linear-gradient(#00e0cd , #8d00eb );
+    background-image: linear-gradient(#00E024 , #11C5A3 );
     height: 70%;
 
     display: flex;
