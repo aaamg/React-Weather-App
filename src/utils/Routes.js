@@ -27,10 +27,10 @@ const Routes = () => {
             {/* <Context.Provider value={{providerName, providerLocation}}> */}
             <Context.Provider value={providerValue}>
                 <Route exact path ="/" component={Login} />
-                <Route exact path="/" component={Hello} />
+                {/* <Route exact path="/" component={Hello} /> */}
                 <Route path="/weather" component={WeatherPage} />
                 <Route path="/hello" component={Hello} />
-                <Route path ="/" component={Navi} />
+                {/* <Route path ="/" component={Navi} /> */}
             </Context.Provider>
         </>
     );

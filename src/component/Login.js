@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react'
+import { Link } from "react-router-dom";
 import { Context } from '../component/Context'
 import './Login.css'
 
@@ -43,7 +44,9 @@ var Login = () => {
                                 onChange={(e) => setLocation(e.target.value)}
                                 placeholder="Location"
                                 />
-                        <input className="input-continue" type="submit" value="Continue" onClick={(e) => setName()} onClick={(e) => setLocation()}/>
+                        <Link to="/weather">
+                            <input className="input-continue" type="submit" value="Continue"/> 
+                        </Link>
                     </form>
                 </div>
                 {/* <p>{name}</p> */}
@@ -65,8 +68,6 @@ const Hello = (props) => {
         </div>
     );
 }
-
-
 
 // export default Login;
 export { Login, Hello };

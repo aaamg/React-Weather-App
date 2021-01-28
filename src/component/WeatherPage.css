@@ -41,4 +41,85 @@
     flex-wrap: wrap;
 }
 
+/* Card Color Mess Below */
 
+.card-1 {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-image: linear-gradient(#00e0cd , #8d00eb );
+        height: 70%;
+    
+        display: flex;
+        justify-content: left;
+        padding-left: 20px;
+        padding-top: 50px;
+        color: white;
+        font-size: 40px;
+        
+}
+
+.card-2 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(#00ff88 , #eb003b );
+    height: 70%;
+
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    padding-top: 50px;
+    color: white;
+    font-size: 40px;
+}
+.card-3 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(#a4e000 , #8d00eb );
+    height: 70%;
+
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    padding-top: 50px;
+    color: white;
+    font-size: 40px;
+    
+}
+.card-4 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(#00e0cd , #eb0000 );
+    height: 70%;
+
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    padding-top: 50px;
+    color: white;
+    font-size: 40px;
+    
+}
+.card-5 {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: linear-gradient(#00e0cd , #8d00eb );
+    height: 70%;
+
+    display: flex;
+    justify-content: left;
+    padding-left: 20px;
+    padding-top: 50px;
+    color: white;
+    font-size: 40px;
+    
+}

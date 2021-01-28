@@ -6,9 +6,10 @@ const Card = (props) => {
         <>
             <div className="box-wrapper">
                 <div className="box">
-                    <p className="temp">{props.temp}</p>
+                    {/* <p className="temp">{props.temp}</p> */}
+                    <p className={props.className}>{props.temp}</p>
                     <h3>{props.day}</h3>
-                    <p>{props.date}</p>
+                    <p className="date">{props.date}</p>
                 </div>
             </div>
         </>
