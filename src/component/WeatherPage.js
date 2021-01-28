@@ -144,7 +144,7 @@ const WeatherPage = (props) => {
             <div className="weather-wrapper">
                 <div className="weather-header">
                     <h1 className="weather-name">Hi, {name} </h1>
-                    <h3 className="weather-forecast-text">Weather forecast: <p className="city-name">{`\u00A0`}{location}{`\u00A0`}</p> for the next 5 days.</h3>
+                    <h3 className="weather-forecast-text">Weather forecast: <p className="city-name">{`\u00A0`}{location}{`\u00A0`}</p> for the next 5 days</h3>
                 </div>
                 <div className="weather-boxes">
                     {/* <p className="boxes">{testData.map((banana) => {
@@ -160,31 +160,32 @@ const WeatherPage = (props) => {
                 <div className="boxes">
                     <Card 
                             temp={Math.round(weather.temp1) + '​°'}
-                            day={n.slice(0,3)}
+                            // day={n.slice(0,3)} <--- if we want to abreviate to Mon, Tues, Wed, Thu, Fri.
+                            day={n}
                             date={day1}
                             className={"card-1"}
                         />
                     <Card 
                             temp={Math.round(weather.temp2) + '​°'}
-                            day={weather.day2.slice(0,3)}
+                            day={weather.day2}
                             date={day2}
                             className={"card-2"}
                         />
                     <Card 
                             temp={Math.round(weather.temp3) + '​°'}
-                            day={weather.day3.slice(0,3)}
+                            day={weather.day3}
                             date={day3}
                             className={"card-3"}
                         />
                     <Card 
                             temp={Math.round(weather.temp4) + '​°'}
-                            day={weather.day4.slice(0,3)}
+                            day={weather.day4}
                             date={day4}
                             className={"card-4"}
                         />
                     <Card   
                             temp={Math.round(weather.temp5) + '​°'}
-                            day={weather.day5.slice(0,3)}
+                            day={weather.day5}
                             date={day5}
                             className={"card-5"}
                         />

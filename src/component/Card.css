@@ -35,7 +35,7 @@
     justify-content: space-evenly;
 }
 
-h3 {
+h4 {
     margin-top: 0px;
     margin-bottom: 10px;
     color: #000000;
@@ -48,4 +48,14 @@ p {
 
 .date {
     color: #000000;
+    padding-left: 20px;
+    display: flex;
+    font-weight: 100;
+}
+
+.day {
+    padding-top: 5px;
+    padding-left: 20px;
+    display: flex;
+    font-weight: bold;
 }
