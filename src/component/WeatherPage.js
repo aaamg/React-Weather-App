@@ -73,7 +73,7 @@ const WeatherPage = (props) => {
     var url = `https://api.openweathermap.org/data/2.5/forecast?units=imperial&q=${location}&appid=85f48bfed6f16f0b4ac5840f56199b17`;
 
     const [weather, setWeather] = useState({
-        temp1: "", //We will use 6, 12, 18, 24, 32 as our random points for the weather of the day(s)
+        temp1: "", // We will use 6, 12, 18, 24, 32 as our random points for the weather of the day(s)
         temp2: "",
         temp3: "",
         temp4: "",
@@ -94,7 +94,7 @@ const WeatherPage = (props) => {
         axios
           .get(url)
           .then((res) => {
-            console.log("Response: ", res.data);
+            console.log("Weather API Response: ", res.data); // If you would like to see what I am returning <------ 
             setWeather({
               // Day 1
               temp1: res.data.list[6].main.temp,
@@ -144,7 +144,7 @@ const WeatherPage = (props) => {
             <div className="weather-wrapper">
                 <div className="weather-header">
                     <h1 className="weather-name">Hi, {name} </h1>
-                    <h3 className="weather-forecast-text">Weather forecast: {location} for the next 5 days.</h3>
+                    <h3 className="weather-forecast-text">Weather forecast: <p className="city-name">{`\u00A0`}{location}{`\u00A0`}</p> for the next 5 days</h3>
                 </div>
                 <div className="weather-boxes">
                     {/* <p className="boxes">{testData.map((banana) => {
@@ -156,36 +156,36 @@ const WeatherPage = (props) => {
                         />
                         )})}
                     </p> */} 
-                    {/* RE Above: I wanted to find a way to map through my API values, but was having trouble so I just hard coded the cards/state but with more time this could be refactored! */}
+                    {/* RE Above: I wanted to find a way to map through my API values, but was having trouble so I just hard coded the cards/state but with more time this WOULD be refactored! */}
                 <div className="boxes">
                     <Card 
-                            // temp={`${weather.temp1} ` + '&#176;'}
                             temp={Math.round(weather.temp1) + '​°'}
-                            day={n.slice(0,3)}
+                            // day={n.slice(0,3)} <--- if we want to abreviate to Mon, Tues, Wed, Thu, Fri.
+                            day={n} // <---- This day of the week works, others do not 'yet'--they are hard coded :-)
                             date={day1}
                             className={"card-1"}
                         />
                     <Card 
                             temp={Math.round(weather.temp2) + '​°'}
-                            day={weather.day2.slice(0,3)}
+                            day={weather.day2}
                             date={day2}
                             className={"card-2"}
                         />
                     <Card 
                             temp={Math.round(weather.temp3) + '​°'}
-                            day={weather.day3.slice(0,3)}
+                            day={weather.day3}
                             date={day3}
                             className={"card-3"}
                         />
                     <Card 
                             temp={Math.round(weather.temp4) + '​°'}
-                            day={weather.day4.slice(0,3)}
+                            day={weather.day4}
                             date={day4}
                             className={"card-4"}
                         />
                     <Card   
                             temp={Math.round(weather.temp5) + '​°'}
-                            day={weather.day5.slice(0,3)}
+                            day={weather.day5}
                             date={day5}
                             className={"card-5"}
                         />

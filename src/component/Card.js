@@ -8,7 +8,7 @@ const Card = (props) => {
                 <div className="box">
                     {/* <p className="temp">{props.temp}</p> */}
                     <p className={props.className}>{props.temp}</p>
-                    <h3>{props.day}</h3>
+                    <h4 className="day">{props.day}</h4>
                     <p className="date">{props.date}</p>
                 </div>
             </div>
