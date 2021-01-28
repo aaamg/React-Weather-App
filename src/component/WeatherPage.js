@@ -73,7 +73,7 @@ const WeatherPage = (props) => {
     var url = `https://api.openweathermap.org/data/2.5/forecast?units=imperial&q=${location}&appid=85f48bfed6f16f0b4ac5840f56199b17`;
 
     const [weather, setWeather] = useState({
-        temp1: "", //We will use 6, 12, 18, 24, 32 as our random points for the weather of the day(s)
+        temp1: "", // We will use 6, 12, 18, 24, 32 as our random points for the weather of the day(s)
         temp2: "",
         temp3: "",
         temp4: "",
@@ -94,7 +94,7 @@ const WeatherPage = (props) => {
         axios
           .get(url)
           .then((res) => {
-            console.log("Response: ", res.data);
+            console.log("Weather API Response: ", res.data); // If you would like to see what I am returning <------ 
             setWeather({
               // Day 1
               temp1: res.data.list[6].main.temp,
@@ -144,7 +144,7 @@ const WeatherPage = (props) => {
             <div className="weather-wrapper">
                 <div className="weather-header">
                     <h1 className="weather-name">Hi, {name} </h1>
-                    <h3 className="weather-forecast-text">Weather forecast: {location} for the next 5 days.</h3>
+                    <h3 className="weather-forecast-text">Weather forecast: <p className="city-name">{`\u00A0`}{location}{`\u00A0`}</p> for the next 5 days.</h3>
                 </div>
                 <div className="weather-boxes">
                     {/* <p className="boxes">{testData.map((banana) => {
