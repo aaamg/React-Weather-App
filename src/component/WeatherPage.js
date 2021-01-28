@@ -103,19 +103,19 @@ const WeatherPage = (props) => {
               // Day 2
               temp2: res.data.list[12].main.temp,
               date2: res.data.list[12].dt_txt,
-              day2: "Tuesday",
+              day2: "Next Day",
               // Day 3
               temp3: res.data.list[18].main.temp,
               date3: res.data.list[18].dt_txt,
-              day3: "Wednesday",
+              day3: "Two Days",
               // Day 4
               temp4: res.data.list[24].main.temp,
               date4: res.data.list[24].dt_txt,
-              day4: "Thusday",
+              day4: "Three Days",
               // Day 5
               temp5: res.data.list[32].main.temp,
               date5: res.data.list[32].dt_txt,
-              day5: "Friday",
+              day5: "Four Days",
             });
           })
           .catch((err) => {
