@@ -167,7 +167,7 @@ const WeatherPage = (props) => {
                         />
                     <Card 
                             temp={Math.round(weather.temp2) + '​°'}
-                            day={weather.day3.slice(0,3)}
+                            day={weather.day2.slice(0,3)}
                             date={day2}
                             className={"card-2"}
                         />
