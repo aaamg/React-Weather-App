@@ -161,7 +161,7 @@ const WeatherPage = (props) => {
                     <Card 
                             temp={Math.round(weather.temp1) + '​°'}
                             // day={n.slice(0,3)} <--- if we want to abreviate to Mon, Tues, Wed, Thu, Fri.
-                            day={n}
+                            day={n} // <---- This day of the week works, others do not 'yet'--they are hard coded :-)
                             date={day1}
                             className={"card-1"}
                         />
