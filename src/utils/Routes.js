@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect, useReducer } from 'react';
 import { Route } from "react-router-dom";
 
 // Routes imported
@@ -18,9 +18,11 @@ const Routes = () => {
         name, setName,
         location, setLocation
     }), [name, location])
-    //         location, setLocation
-
-    // }), [location, setLocation])
+    
+    useEffect(() => {
+        localStorage.setItem("name:", JSON.stringify(name));
+        localStorage.setItem("location:", JSON.stringify(location));
+      }, [name, location]);
     return(
         <>
             {/* <Context.Provider value={{ value1: [name, setName], value2: [location, setLocation] }}> */}
