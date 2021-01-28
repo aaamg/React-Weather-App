@@ -56,6 +56,7 @@ var Login = () => {
     );
 }
 
+// Testing state with this component
 const Hello = (props) => {
     const {name, setName} = useContext(Context);
     const {location, setLocation} = useContext(Context);

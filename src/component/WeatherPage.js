@@ -156,10 +156,9 @@ const WeatherPage = (props) => {
                         />
                         )})}
                     </p> */} 
-                    {/* RE Above: I wanted to find a way to map through my API values, but was having trouble so I just hard coded the cards/state but with more time this could be refactored! */}
+                    {/* RE Above: I wanted to find a way to map through my API values, but was having trouble so I just hard coded the cards/state but with more time this WOULD be refactored! */}
                 <div className="boxes">
                     <Card 
-                            // temp={`${weather.temp1} ` + '&#176;'}
                             temp={Math.round(weather.temp1) + '​°'}
                             day={n.slice(0,3)}
                             date={day1}
